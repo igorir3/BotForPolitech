@@ -11,7 +11,7 @@ if os.path.exists('config.ini'):
 else:
     config = configparser.ConfigParser()
     config.add_section("MAIN")
-    token='6643667497:AAHhc_zwDbII4_5ETIp7xsLLUS2KBIq1Y40'
+    token='САМИПИШИТЕ'
     config.set("MAIN", "token", token)
     with open("config.ini", "w") as config_file:
         config.write(config_file)
