@@ -11,12 +11,12 @@ if os.path.exists('config.ini'):
 else:
     config = configparser.ConfigParser()
     config.add_section("MAIN")
-    token='САМИПИШИТЕ'
+    token='Вставить токен здесь!'
     config.set("MAIN", "token", token)
     with open("config.ini", "w") as config_file:
         config.write(config_file)
     config_file.close()
-    
+    input("Откройте файл config.ini и впишите в него токен, а после нажмите Enter")
 
 bot=telebot.TeleBot(token)
 
